@@ -1,0 +1,173 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  background-image: url(https://xatimg.com/image/SI7ngK0jwZHC.jpg);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+body center {
+  font-size: 14px;
+  position: absolute;
+  bottom: 20px;
+  color: #fff;
+}
+body center a {
+  color: steelblue;
+}
+
+i {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 4px rgba(255, 255, 255, 0.8);
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  transform: rotate(15deg);
+  animation: shine;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+.totostanding {
+	position: fixed;
+	bottom: 0;
+	left: 83%;
+	bottom: 155px;
+	z-index: 500;
+}
+.wiztext {
+	color: #00FFFF;
+	margin-top: 10%;
+	font-family: 'TinWoodman';
+	font-size: 8vw;
+	opacity: 0.45;
+	text-align: left;
+	letter-spacing: 10px;
+	position: fixed;
+	width: 200%;
+	min-width: 26000px;
+	z-index: 99000;
+	display: inline-block;
+	  text-shadow: 0 1px 0 hsl(174, 5%, 80%), 0 2px 0 hsl(174, 5%, 75%), 0 3px 0 hsl(174, 5%, 70%), 0 4px 0 hsl(174, 5%, 66%), 0 5px 0 hsl(174, 5%, 64%), 0 6px 0 hsl(174, 5%, 62%), 0 7px 0 hsl(174, 5%, 61%), 0 8px 0 hsl(174, 5%, 60%), 0 0 5px rgba(0, 0, 0, .05), 0 1px 3px rgba(0, 0, 0, .2), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .2), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .3);
+
+	animation: whiz 30s infinite linear;
+	-webkit-animation: whiz 60s infinite linear;
+}
+
+
+
+.animated {
+	visibility: visible !important;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-duration: 3s;
+	animation-duration: 3s;
+	-webkit-backface-visibility: visible !important;
+	backface-visibility: visible !important;
+}
+
+
+
+
+ @keyframes whiz {
+ 0% {
+ left: 250%;
+}
+ 100% {
+ left: -250%;
+}
+}
+@-webkit-keyframes whiz {
+ 0% {
+ left: 250%;
+}
+ 100% {
+ left: -250%;
+}
+}
+.x {
+	-webkit-animation: x 20s linear infinite alternate;
+	animation: x 20s linear infinite alternate;
+}
+.y {
+	-webkit-animation: y 10s linear infinite alternate;
+	animation: y 10s linear infinite alternate;
+}
+ @-webkit-keyframes x {
+ 100% {
+ -webkit-transform: translateX(calc(100vw - 3000px));
+ transform: translateX(calc(100vw - 3000px));
+}
+}
+ @keyframes x {
+ 100% {
+ -webkit-transform: translateX(calc(1000vw - 3000px));
+ transform: translateX(calc(1000vw - 3000px));
+}
+}
+@-webkit-keyframes y {
+ 100% {
+ -webkit-transform: translateY(calc(1000vh - 3000px));
+ transform: translateY(calc(100vh - 3000px));
+}
+}
+@keyframes y {
+ 100% {
+ -webkit-transform: translateY(calc(1000vh - 3000px));
+ transform: translateY(calc(1000vh - 3000px));
+}
+}
+
+main{
+  width: 300px;
+  height: 400px;
+  position: absolute;
+  top: 63%;
+  left: 14%;
+  transform: translate(-50%, -50%);
+  box-shadow: 20px 5px 30px rgba(0, 0, 0, 0.8);
+}
+
+.animated {
+	visibility: visible !important;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-duration: 3s;
+	animation-duration: 3s;
+	-webkit-backface-visibility: visible !important;
+	backface-visibility: visible !important;
+}
+i:after, i:before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: linear-gradient(to left, transparent, white, transparent);
+  left: -34px;
+  top: calc(50% - 1px);
+  width: 80px;
+  height: 2px;
+}
+i:before {
+  width: 2px;
+  height: 80px;
+  left: calc(50% - 1px);
+  top: -34px;
+  background-image: linear-gradient(to bottom, transparent, white, transparent);
+}
+
+@keyframes shine {
+  0% {
+    transform: scale(0.1) rotate(-200deg);
+  }
+  55% {
+    transform: scale(1.2) rotate(180deg);
+  }
+  100% {
+    transform: scale(0.1) rotate(-200deg);
+  }
+}
